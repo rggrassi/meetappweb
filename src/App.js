@@ -6,9 +6,9 @@ import history from './services/history';
 
 export default function App() {
   return (
-      <Router history={history}>
-        <Routes />
-        <GlobalStyle />
-      </Router>
-  )
+        <Router history={history}>
+            <Routes />
+            <GlobalStyle />
+        </Router>
+    )
 }
