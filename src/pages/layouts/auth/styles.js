@@ -49,6 +49,14 @@ export const Content = styled.div`
         }
     }
 
+    span {
+        align-self: flex-start;
+        color: #fb6f91;
+        margin: 0 0 10px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
     a {
         color: #fff;
         margin-top: 15px;
@@ -57,7 +65,7 @@ export const Content = styled.div`
         opacity: 0.8;
 
         &:hover {
-        opacity: 1;
+            opacity: 1;
         }
     }
 `;
