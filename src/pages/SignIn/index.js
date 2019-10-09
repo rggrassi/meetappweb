@@ -2,12 +2,21 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.svg';
 import { Form, Input } from '@rocketseat/unform';
-import schema from './validation/schema';
+import * as Yup from 'yup';
+
+const schema = Yup.object().shape({
+    email: Yup.string()
+        .email('Insira um e-mail válido')
+        .required('O e-mail é obrigatório'),
+    password: Yup.string()
+        .min(6, 'A senha deve ter no mínimo 6 caracteres')
+        .required('A senha é obrigatória')    
+})
 
 export default function SignIn() {
 
     function handleSubmit({ email, password }) {
-        
+            
     }
 
     return (
